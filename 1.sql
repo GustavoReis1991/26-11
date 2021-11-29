@@ -33,4 +33,4 @@ insert into tb_personagem (nome, ataque, defesa, magia, tb_classe_id) values ("M
 insert into tb_personagem (nome, ataque, defesa, magia, tb_classe_id) values ("Belzebu", 3300, 2200, 3500,2);
 insert into tb_personagem (nome, ataque, defesa, magia, tb_classe_id) values ("Hercules", 3000, 2700, 3000,3);
 select * from tb_personagem;
-select nome, ataque, defesa,magia from tb_personagem inner join tb_classe on tb_classe.id = tb_personagem.tb_classe_id;
+select * from tb_personagem inner join tb_classe on tb_personagem.tb_classe_id = tb_classe.id;
